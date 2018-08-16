@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.khoi {
+    width:  460px;
+    height: 287px;
+    margin:  auto;
+    position:  relative;
+    overflow:hidden;
+}
+
+img.layer1 {
+    transition:  0.4s;
+}
+
+.khoi:hover .layer1{
+    transform:scale(1.2);
+}
+
+.den {
+    width:  460px;
+    height: 287px;
+    top: 0;
+    left: 0;
+    position:  absolute;
+    background: #00000073;
+    opacity: 0;
+    transition:0.4s;
+}
+
+.khoi:hover .den{
+    opacity:1;
+}
+
+.chu1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    padding: 7px 10px;
+    background: wheat;
+    transition: 0.3s;
+    transform: translateX(-400px);
+}
+
+.chu2 {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    padding: 7px 10px;
+    background: wheat;
+    transition: 0.6s;
+    transform: translateX(-400px);
+}
+
+.chu3 {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    padding: 7px 10px;
+    background: wheat;
+    transition: 0.9s;
+    transform: translateX(-400px);
+}
+
+.khoi:hover .den{
+    opacity:1;
+}
+
+.khoi:hover .chu1{
+	transform:translateX(40px);
+}
+
+.khoi:hover .chu2{
+	transform:translateX(40px);
+}
+
+.khoi:hover .chu3{
+	transform:translateX(40px);
+}
