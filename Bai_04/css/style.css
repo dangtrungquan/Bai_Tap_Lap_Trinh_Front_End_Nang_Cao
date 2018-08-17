@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.bonnd {
+    width:  900px;
+    margin:  auto;
+    margin-top:  25px;
+}
+
+.bonnut li {
+    list-style-type:  none;
+    float:  left;
+    padding:  10px;
+}
+
+.bonnut {
+    width:  900px;
+    height:  70px;
+    background:  wheat;
+    margin:  auto;
+}
+
+.bonnd .ndchitiet.active {
+	display: block;
+}
+
+.bonnd .ndchitiet {
+    list-style:  none;
+    font-size:  18px;
+    border: 1px solid red;
+    padding:  10px;
+    display:  none;
+}
+
+.bonnut .btn.active{
+	background:red;
+}

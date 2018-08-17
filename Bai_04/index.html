@@ -21,19 +21,42 @@
 	<script language="javascript" src="js/main.js"></script>
 </head>
 <body>
+	<script>
+		$(document).ready(function(){
+	        $(".btn").click(function(){
+			    var x = $(this).attr("data-id");
+			    $(".bonnut .btn").removeClass("active");
+			    $(this).addClass("active");
+			    $(".bonnd .ndchitiet").removeClass("active"); 
+                $(".bonnd #"+x).addClass("active");   
+		   });
+        });
+		
+	</script>
 	
 	<div class="bonnut">
 		<ul>
-			<li><b class="btn btn-default"></b>Photoshop</li>
+			<li><button type="button" data-id="1" class="btn btn-default active">PHOTOSHOP</button></li>
+			<li><button type="button" data-id="2" class="btn btn-default">HTML/CSS</button></li>
+			<li><button type="button" data-id="3" class="btn btn-default">JQUERY</button></li>
+			<li><button type="button" data-id="4" class="btn btn-default">PHP</button></li>
 		</ul>
+	</div>	
+	<div class="bonnd">
+		<div id="1" class="ndchitiet active">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sed autem aspernatur, voluptatibus provident possimus. Nostrum amet enim libero neque maiores excepturi cum, esse veritatis molestiae, error sint dignissimos eaque.</div>
+		<div id="2" class="ndchitiet">2.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sed autem aspernatur, voluptatibus provident possimus. Nostrum amet enim libero neque maiores excepturi cum, esse veritatis molestiae, error sint dignissimos eaque.</div>
+		<div id="3" class="ndchitiet">3.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sed autem aspernatur, voluptatibus provident possimus. Nostrum amet enim libero neque maiores excepturi cum, esse veritatis molestiae, error sint dignissimos eaque.</div>
+		<div id="4" class="ndchitiet">4.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sed autem aspernatur, voluptatibus provident possimus. Nostrum amet enim libero neque maiores excepturi cum, esse veritatis molestiae, error sint dignissimos eaque.</div>	
 	</div>
-	
+
 	
 
 <!--Use swiper-->
 <script src="js/swiper.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+
  
 </body>
 </html>
