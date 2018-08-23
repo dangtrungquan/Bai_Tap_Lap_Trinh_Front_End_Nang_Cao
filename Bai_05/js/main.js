@@ -2,15 +2,18 @@ $(document).ready(function(){
 	
   new WOW().init(); //Khởi tạo wow JS
 
-  //Kiem tra xem co bao nhiu anh 
-  var SoLuongAnh = $('.slideanh img').length;
+  
   
   // them mot the html vao vi tri bat ky
   $('.slideanh').append("<img src='' class='anh' >");
+
   // xu ly click vao nut dieu huong
   var dem  = 0;
-
   $('.phai').click(function(){
+    //Kiem tra xem co bao nhiu anh 
+    var SoLuongAnh = $(this).parent().prev().children().length;
+    var SoLuongAnh = SoLuongAnh - 1;
+    //console.log(SoLuongAnh);
   	
   	$(this).parent().prev().children('.anh').attr({src:$('.slideanh img:nth-child('+dem+')').attr('src')});
 
@@ -19,6 +22,9 @@ $(document).ready(function(){
   });
 
   $('.trai').click(function(){
+    //Kiem tra xem co bao nhiu anh 
+    var SoLuongAnh = $(this).parent().prev().children().length;
+    var SoLuongAnh = SoLuongAnh - 1;
   	
   	$(this).parent().prev().children('.anh').attr({src:$('.slideanh img:nth-child('+dem+')').attr('src')});
 

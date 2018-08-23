@@ -1,0 +1,33 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.khoianh img {
+    width:  100%;
+}
+
+.noidung .khoianh {
+    width:  25%; /* chia trang web thanh 4 cot */
+    box-sizing:  border-box;
+    padding: 5px;
+}
+
+.noidung .nhandoi{
+	width: 50%;
+}
+
+.noidung { 
+	display:  flex; /* Hien thi noi duyng tren mot hang ngang, giong float: left; */
+	flex-wrap:  wrap;/* boc lai trong pham vi cua trang web */
+}
+
+figcaption {
+    text-align: center;
+    background: lightblue;
+    padding: 2px;
+}
+
+.duocchon{
+	background: red;
+}
