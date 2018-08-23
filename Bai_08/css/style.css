@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+}
+
+.top{
+	background: url("../img/bg_01.jpg");
+	background-size: cover;
+	height: 100%; 
+	width: 100%;
+	/* Can giua theo chieu doc */
+	display: table; /* cho thang cha hien thi theo kieu table */
+	/* Can giua theo chieu doc */
+}
+
+.top .noidung{
+	color: white;
+	/* Can giua theo chieu doc */
+	vertical-align: middle; /* Thang con hien thi o vi tri trung tam */
+	display: table-cell; /* La mot cot trong cai bang */
+	/* Can giua theo chieu doc */
+}
